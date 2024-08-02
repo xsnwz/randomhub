@@ -1,3 +1,4 @@
+_G.Main = Color3.fromRGB(225, 23, 55)
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 
@@ -292,7 +293,7 @@ function RadientPaid:Window(text,maincolor)
 	UserTag.Position = UDim2.new(0.230000004, 0, 0.275000013, 0)
 	UserTag.Size = UDim2.new(0, 95, 0, 17)
 	UserTag.Font = Enum.Font.GothamBold
-	UserTag.TextColor3 = Color3.fromRGB(86, 217, 252)
+	UserTag.TextColor3 = _G.Main
 	UserTag.TextSize = 13.000
 	UserTag.TextTransparency = 0
 	UserTag.TextXAlignment = Enum.TextXAlignment.Left
@@ -1720,7 +1721,7 @@ function RadientPaid:Window(text,maincolor)
 		Server.Text = ""
 		Server.BackgroundTransparency = 1
 		Server.TextTransparency = 1
-		Server.TextColor3 = Color3.fromRGB(86, 217, 252)
+		Server.TextColor3 = _G.Main
 		Server.TextSize = 18.000
 
 		ServerBtnCorner.CornerRadius = UDim.new(1, 0)
@@ -1801,7 +1802,7 @@ function RadientPaid:Window(text,maincolor)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
 		ServerTitle.Font = Enum.Font.GothamSemibold
 		ServerTitle.Text = text
-		ServerTitle.TextColor3 = Color3.fromRGB(86, 217, 252)
+		ServerTitle.TextColor3 = _G.Main
 		ServerTitle.TextSize = 15.000
 		ServerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2121,7 +2122,7 @@ function RadientPaid:Window(text,maincolor)
 			ChannelHolder.ScrollBarThickness = 6
 			ChannelHolder.CanvasSize = UDim2.new(0,0,0,0)
 			ChannelHolder.ScrollBarImageTransparency = 0
-			ChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(86, 217, 252)
+			ChannelHolder.ScrollBarImageColor3 = _G.Main
 			ChannelHolder.Visible = false
 			ChannelHolder.ClipsDescendants = false
 
@@ -2286,7 +2287,7 @@ function RadientPaid:Window(text,maincolor)
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
 						TweenService:Create(Icon,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
-						TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(86, 217, 252)}):Play()
+						TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = _G.Main}):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(Icon,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 1}):Play()
 						Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
@@ -2307,7 +2308,7 @@ function RadientPaid:Window(text,maincolor)
 				if default == true then
 					toggled = false
 					TweenService:Create(Icon,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageColor3 = Color3.fromRGB(255,255,255)}):Play()
-					TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(86, 217, 252)}):Play()
+					TweenService:Create(ToggleFrame,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{BackgroundColor3 = _G.Main}):Play()
 					ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 					TweenService:Create(Icon,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency = 1}):Play()
 					Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
@@ -2375,7 +2376,7 @@ function RadientPaid:Window(text,maincolor)
 
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(86, 217, 252)
+				CurrentValueFrame.BackgroundColor3 = _G.Main
 				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
