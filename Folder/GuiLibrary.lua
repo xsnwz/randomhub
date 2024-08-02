@@ -1800,7 +1800,7 @@ function RadientPaid:Window(text,maincolor)
 		ServerTitle.BorderSizePixel = 0
 		ServerTitle.Position = UDim2.new(0.0751359761, 0, 0, 0)
 		ServerTitle.Size = UDim2.new(0, 97, 0, 39)
-		ServerTitle.Font = Enum.Font.GothamSemibold
+		ServerTitle.Font = Enum.Font.GothamBold
 		ServerTitle.Text = text
 		ServerTitle.TextColor3 = _G.Main
 		ServerTitle.TextSize = 15.000
