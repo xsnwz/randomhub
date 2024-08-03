@@ -1,4 +1,4 @@
-_G.Main = Color3.fromRGB(225, 23, 55)
+_G.Main = Color3.fromRGB(255, 172, 28)
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 
