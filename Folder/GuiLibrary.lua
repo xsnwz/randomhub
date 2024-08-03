@@ -159,6 +159,7 @@ function RadientPaid:Window(text,maincolor)
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
+	TopFrame.ZIndex = 2
 
 	TopFramess.Name = "TopFramess"
 	TopFramess.Parent = TopFrame
