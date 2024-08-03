@@ -1,4 +1,4 @@
-_G.Main = Color3.fromRGB(255, 176, 39)
+_G.Main = Color3.fromRGB(225, 23, 55)
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 
@@ -159,7 +159,6 @@ function RadientPaid:Window(text,maincolor)
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
-	TopFrame.ZIndex = 2
 
 	TopFramess.Name = "TopFramess"
 	TopFramess.Parent = TopFrame
@@ -1687,7 +1686,7 @@ function RadientPaid:Window(text,maincolor)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(233, 25, 42)}
+				{BackgroundColor3 = _G.Main}
 			):Play()
 		end)
 
@@ -2355,7 +2354,7 @@ function RadientPaid:Window(text,maincolor)
 
 				SliderTitle.Name = "SliderTitle"
 				SliderTitle.Parent = Slider
-				SliderTitle.BackgroundColor3 = Color3.fromRGB(233, 25, 42)
+				SliderTitle.BackgroundColor3 = _G.Main
 				SliderTitle.BackgroundTransparency = 1.000
 				SliderTitle.Position = UDim2.new(0, 5, 0, -4)
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
@@ -2665,7 +2664,7 @@ function RadientPaid:Window(text,maincolor)
 				DropItemHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 				DropItemHolder.ScrollBarThickness = 4
 				DropItemHolder.BorderSizePixel = 0
-				DropItemHolder.ScrollBarImageColor3 = Color3.fromRGB(233, 25, 42)
+				DropItemHolder.ScrollBarImageColor3 = _G.Main
 
 				DropItemHolderLayout.Name = "ItemHolderLayout"
 				DropItemHolderLayout.Parent = DropItemHolder
