@@ -1160,6 +1160,7 @@ library.new = function(info)
 					ZIndex = 2,
 					FontFace = Font.new("rbxassetid://12187374537", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
 					Text = (info.Title or "null"),
+					ClipsDescendants = true,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					TextSize = 12.000,
 					TextXAlignment = Enum.TextXAlignment.Left,
@@ -1714,5 +1715,4 @@ library.new = function(info)
 	end
 	return library.tab
 end
-
 return library
